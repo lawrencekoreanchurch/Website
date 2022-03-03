@@ -1,0 +1,282 @@
+.main-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 13, 194, 1) 0%,
+    rgba(13, 13, 194, 0.95) 50%,
+    rgba(13, 13, 194, 0.4) 100%
+  );
+  background-color: rgba(2, 2, 37, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: none;
+
+  @include respond(phone-large) {
+    overflow-y: scroll;
+  }
+
+  &__contents {
+    width: 95vw;
+    // height: 90vh;
+    margin: 0 auto;
+    background-color: rgba(9, 9, 128, 1);
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    @include respond(tab-land-iPad-air) {
+      width: 100%;
+    }
+
+    @include respond(phone-large) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url(../Image/cross-pattern-1.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
+}
+
+.main-overlay {
+  &__contents {
+    &-left {
+      align-self: flex-start;
+      padding-top: 1.5rem;
+      // color: #499eff;
+      // color: rgba(9, 9, 128, 1);
+      background-color: rgba(133, 26, 204, 0.8);
+      border-bottom-right-radius: 20rem;
+      padding-bottom: 10rem;
+      padding-left: 1rem;
+      filter: drop-shadow(2rem 2rem 2rem #070757);
+
+      @include respond(phone-large) {
+        align-self: center;
+      }
+
+      &--church {
+        &-name {
+          font-size: 7rem;
+          font-weight: 700;
+          // letter-spacing: 0.1rem;
+          color: transparent;
+          -webkit-text-stroke: 0.1rem #f9f9f9;
+          margin-left: -5rem;
+
+          @include respond(phone-large) {
+            margin-left: 0;
+          }
+
+          @include respond(tab-land-iPad-air) {
+            padding-left: 5rem;
+          }
+
+          & span {
+            display: block;
+
+            @include respond(phone-large) {
+              display: inline;
+            }
+
+            @include respond(tab-land-iPad-air) {
+              display: inline;
+            }
+
+            &:first-child {
+              margin-bottom: -4rem;
+            }
+          }
+        } // -name
+
+        &-address {
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          line-height: 2rem;
+          color: rgb(0, 0, 34);
+          margin-top: 2rem;
+          margin-bottom: 5rem;
+
+          @include respond(phone-large) {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+          }
+
+          @include respond(tab-land-iPad-air) {
+            font-size: 2.5rem;
+          }
+        } // -address
+      } // --church
+
+      & ul {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: rgb(233, 233, 233);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include respond(tab-land-iPad-air) {
+          font-size: 2.5rem;
+        }
+      }
+
+      &--email {
+        text-transform: uppercase;
+        margin-bottom: -0.5rem;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 30%;
+          height: 100%;
+          background-color: rgb(214, 26, 57);
+          filter: drop-shadow(1rem 1rem 1rem #0f0757be);
+          border-bottom-left-radius: 5rem;
+          position: absolute;
+          top: -3rem;
+          left: -6.5rem;
+          opacity: 1;
+          z-index: -1;
+
+          @include respond(phone-large) {
+            height: 50%;
+            left: -1rem;
+          }
+        }
+      } // --email
+
+      &--phone li:last-child {
+        font-size: 2rem;
+
+        @include respond(tab-land-iPad-air) {
+          font-size: 2.5rem;
+        }
+      }
+    } // -left
+
+    &-right {
+      background-color: rgb(15, 72, 177);
+      margin-top: 10vh;
+      padding-top: 5rem;
+      padding-left: 3rem;
+      padding-right: 5rem;
+      padding-bottom: 5rem;
+      border-top-right-radius: 20rem;
+      filter: drop-shadow(2rem 2rem 2rem #070757);
+
+      @include respond(phone-large) {
+        width: 90%;
+        margin-top: -2rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+      }
+
+      @include respond(tab-land-iPad-air) {
+        margin-top: 0;
+      }
+
+      &--group {
+        font-size: 2rem;
+        color: #ffffff;
+
+        @include respond(phone-large) {
+          font-size: 1.9rem;
+        }
+
+        & ul:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        & ul li:first-child {
+          font-size: 3rem;
+
+          @include respond(phone-large) {
+            font-size: 2.3rem;
+          }
+        }
+
+        &-2 {
+          position: relative;
+          z-index: 1;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 30%;
+            height: 200%;
+            background-color: rgb(214, 26, 57);
+            filter: drop-shadow(1rem 1rem 1rem #0f0757);
+            border-top-left-radius: 5rem;
+            position: absolute;
+            top: -2.5rem;
+            left: -9rem;
+            opacity: 1;
+            z-index: -1;
+
+            @include respond(phone-large) {
+              height: 50%;
+              left: -1rem;
+            }
+          }
+        } // -2
+
+        &-3 {
+          margin-top: 7rem;
+        }
+      } // --group
+    } // -right
+  } // __contents
+} // main-overlay
+
+.main-overlay__contents--icon {
+  &-email,
+  &-phone {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translateY(0.5rem);
+    margin-right: 1rem;
+    fill: #ffffff;
+  }
+}
+
+.main-overlay__contents-right--group nav {
+  margin-top: 5rem;
+  padding-left: 5rem;
+  position: relative;
+  z-index: 999;
+}
+
+.main-overlay__contents-right--group nav ul li {
+  filter: drop-shadow(0.5rem 0.5rem 1rem #0f0757);
+}
+
+.main-overlay__contents-right--group nav ul li:hover {
+  transform: translateY(0.1rem);
+  -webkit-transition: all 0.1s;
+  filter: drop-shadow(0.5rem 0.5rem 0rem #0f0757);
+}
+
+.main-overlay__contents-right--group nav ul li:active {
+  opacity: 0.5;
+  -webkit-transition: all 0.1s;
+  filter: drop-shadow(0.5rem 0.5rem 0rem #0f0757);
+}

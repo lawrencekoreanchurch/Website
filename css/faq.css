@@ -1,0 +1,100 @@
+/* **********************
+  
+       SECTION - FAQ
+  
+  *********************** */
+  
+  .section-faq {
+    width: 100%;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    position: relative;
+  }
+  
+  .section-faq::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    background: url(../Image/cross-pattern-1.png),
+      linear-gradient(
+        to bottom,
+        rgba(45, 0, 125, 0.4) 0%,
+        rgba(30, 150, 209, 0.7) 64%,
+        rgba(198, 218, 238, 0.3) 100%
+      );
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    -webkit-mask-image: linear-gradient(
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+    mask-image: linear-gradient(
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  .section-faq__contents {
+    width: 70%;
+    height: 70rem;
+    margin: 0 auto;
+    /* background-color: chocolate; */
+  }
+  
+  .section-faq__contents-title h2:first-child {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  
+  .section-faq__contents-title h2:last-child {
+    font-size: 5.3rem;
+    color: transparent;
+    -webkit-text-stroke: 0.2rem #1111e2;
+    margin-top: -2.5rem;
+  }
+  
+  /* FAQ questions */
+  .section-faq__contents-questions {
+    margin-top: 10rem;
+  }
+  
+  .section-faq__contents-questions ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  .section-faq__contents-questions ul li {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #2d2d2d;
+  }
+  
+  .section-faq__contents-questions ul li:first-child {
+    margin-right: 5rem;
+  }
+  
+  .section-faq__contents-questions ul li:last-child {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: red;
+  }
+  
+  .section-faq__arrow-right {
+    fill: #f9f9f9;
+    width: 3rem;
+    height: 3rem;
+    transform: translate(1rem, 0.5rem);
+  }

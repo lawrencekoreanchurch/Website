@@ -1,0 +1,132 @@
+/* *************************
+
+           FOOTER
+
+************************** */
+
+.footer {
+  width: 100%;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../Image/cross-pattern-1.png);
+  background-repeat: repeat;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.footer__contents {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.footer__contents-left {
+  padding-top: 1.5rem;
+}
+
+.footer__contents-left--church-name {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.footer__contents-left--church-address {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.footer__contents-left ul {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__contents-left--email {
+  margin-bottom: -0.5rem;
+}
+
+.footer__contents--icon-email,
+.footer__contents--icon-phone {
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(0.5rem);
+  margin-right: 1rem;
+}
+
+.footer__contents-right--sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__contents-right--sns li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__contents-right--icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.footer__contents-right--sitemap {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.section-copyright {
+  width: 100%;
+  background: url(../Image/image6-1_small.jpg), #1111e2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-position-y: 85%;
+}
+
+.section-copyright__contents {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-copyright__contents {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-copyright__contents li:not(:last-child) {
+  color: #00ffdd;
+  margin-right: 1rem;
+}
+
+.section-copyright__contents li:last-child {
+  color: #ffffff;
+  margin-left: 30rem;
+}
+
+.copyright {
+  font-size: 2rem;
+}

@@ -1,0 +1,65 @@
+/* *************************
+
+     SECTION - INVITATION
+
+************************** */
+
+.section-invitation {
+  width: 100%;
+  height: 55rem;
+
+  background: url(../Image/image6-1_small.jpg), #1111e2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-position-y: -33rem;
+}
+
+.section-invitation__contents {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-invitation__contents-title {
+  font-size: 7.5rem;
+  font-weight: 700;
+  padding-top: 5rem;
+}
+
+.section-invitation__contents-title li:first-child {
+  color: #ffffff;
+  margin-bottom: -4rem;
+}
+
+.section-invitation__contents-title li:not(:first-child) {
+  color: transparent;
+  -webkit-text-stroke: 0.3rem #ffffff;
+}
+
+.section-invitation__btn {
+  width: 35rem;
+  height: 6.5rem;
+  margin: 0 auto;
+  border-radius: 7rem;
+  background-color: #ff0000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+  margin-top: 2.5rem;
+}
+
+.section-invitation__btn-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+}
+
+.section-invitation__arrow-right {
+  fill: #f9f9f9;
+  width: 3rem;
+  height: 3rem;
+}

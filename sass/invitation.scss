@@ -1,0 +1,91 @@
+/* *************************
+
+     SECTION - INVITATION
+
+************************** */
+
+.section-invitation {
+  width: 100%;
+  // height: 55rem;
+
+  background: url(../Image/image6-1_small.jpg), #1111e2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  // background-position-y: -33rem;
+
+  &__contents {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    @include respond(phone-large) {
+      width: 100%;
+    }
+
+    &-title {
+      font-size: 7.5rem;
+      font-weight: 700;
+      padding-top: 5rem;
+
+      @include respond(phone-large) {
+        font-size: 3rem;
+      }
+
+      & li:first-child {
+        color: #ffffff;
+        margin-bottom: -4rem;
+
+        @include respond(phone-large) {
+          margin-bottom: 0;
+        }
+      }
+
+      & li:not(:first-child) {
+        color: transparent;
+        -webkit-text-stroke: 0.3rem #ffffff;
+
+        @include respond(phone-large) {
+          color: #ffffff;
+          -webkit-text-stroke: 0;
+        }
+      }
+    } // -title
+  } // __contents
+
+  &__btn {
+    width: 35rem;
+    height: 6.5rem;
+    margin: 0 auto;
+    border-radius: 7rem;
+    background-color: #ff0000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3rem;
+    margin-top: 2.5rem;
+
+    &-text {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: 0.1rem;
+
+      @include respond(kpcl-834) {
+        font-size: 4rem;
+      }
+
+      @include respond(phone-large) {
+        font-size: 3.125rem;
+      }
+    }
+  } // __btn
+
+  &__arrow-right {
+    fill: #f9f9f9;
+    width: 3rem;
+    height: 3rem;
+  } // __arrow-right
+} // section-invitation

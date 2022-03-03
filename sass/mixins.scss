@@ -1,0 +1,77 @@
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet Landscape
+[1200 - 1800] is where our normal styles apply.
+1800px + :      Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-ladd
+- big-desktop
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-large {
+        @media (max-width: 26.75em) { @content }; // 428px/16 iPhone 12 Pro Max
+    }
+    @if $breakpoint == kpcl-460 {
+        @media (max-width: 28.75em) { @content }; // 460px
+    }
+    @if $breakpoint == kpcl-488 {
+        @media (max-width: 30.5em) { @content }; // 488px
+    }
+    @if $breakpoint == kpcl-526 {
+        @media (max-width: 32.875em) { @content }; // 526px
+    }
+    @if $breakpoint == kpcl-592 {
+        @media (max-width: 37em) { @content }; // 592px
+    }
+    @if $breakpoint == kpcl-658 {
+        @media (max-width: 41.12em) { @content }; // 658px
+    }
+    @if $breakpoint == kpcl-722 {
+        @media (max-width: 45.12em) { @content }; // 722px
+    }
+    @if $breakpoint == kpcl-749 {
+        @media (max-width: 46.81em) { @content }; // 749px
+    }
+    @if $breakpoint == tab-port-medium {
+        @media (max-width: 49.375em) { @content }; // 790px
+    }
+    @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    }
+    @if $breakpoint == kpcl-834 {
+        @media (max-width: 52.125em) { @content }; // 834px iPad Air - Oldest
+    } 
+    @if $breakpoint == tab-port-large {
+        @media (max-width: 53.37em) { @content }; // 854px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+    @if $breakpoint == tab-land-small {
+        @media (max-width: 57.5em) { @content }; // 920px
+    }
+    @if $breakpoint == kpcl-985 {
+        @media (max-width: 61.56em) { @content }; // 985px
+    }
+    @if $breakpoint == tab-land-medium { 
+        @media (max-width: 64em) { @content }; // * 1024px iPad Air 1,2 generation
+    }
+    @if $breakpoint == tab-land-large {
+        @media (max-width: 73em) { @content }; // 1168px
+    }
+    @if $breakpoint == laptop {
+        @media (max-width: 81.25em) { @content }; // 1300px
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width: 112.5em) { @content }; //1800px
+    }
+}

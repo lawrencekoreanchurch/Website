@@ -1,0 +1,185 @@
+/* **********************
+
+     SECION - INTRO
+
+*********************** */
+
+/* **********************
+     INTRO - UPPER
+*********************** */
+
+.section-intro {
+    margin-top: 5rem;
+  }
+  
+  .section-intro__upper {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+    position: relative;
+  }
+  
+  .section-intro__upper::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Image/cross-pattern-1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+  }
+  
+  .section-intro__upper > * {
+    flex-basis: 40%;
+  }
+  
+  .upper-text-title {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+    color: #11114d;
+  }
+  
+  .upper-text-title--top span {
+    font-size: 4.8rem;
+    color: blue;
+    font-weight: 900;
+  }
+  
+  .upper-text-title--bottom {
+    margin-top: -2rem;
+  }
+  
+  .upper-text-description {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    color: #11114d;
+    margin-top: 3rem;
+    padding-right: 10rem;
+  }
+  
+  /* **********************
+       INTRO - LOWER
+  *********************** */
+  
+  .section-intro__lower {
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
+  }
+  
+  .section-intro__lower-col {
+    display: flex;
+    flex-basis: 20rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-intro__lower-col:not(:last-child) {
+    margin-right: 3rem;
+  }
+  
+  .section-intro__lower-col > h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  /* icon container */
+  .section-intro__lower-col--icon-container {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+  }
+  
+  .section-intro__lower-col--icon-container::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 80%;
+    border: 0.3rem solid #f9f9f9;
+    border-radius: 100%;
+    transform: translate(0.9rem, -4.1rem);
+  }
+  
+  /* icon */
+  .section-intro__lower-col--icon {
+    fill: #f9f9f9;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /* text */
+  .section-intro__lower-col--text span{
+    font-size: 4rem;
+  }
+  
+  /* col-1 */
+  .section-intro__lower-col--icon-container-1 {
+    background-color: #11114d;
+  }
+  
+  .icon--college {
+    transform: translate(2.2rem, 2rem);
+  }
+  
+  .section-intro__lower-col--text-1 {
+    color: #171766;
+  }
+  
+  .section-intro__lower-col--text-1 span {
+    color: #0c0c42;
+  }
+  
+  /* col-2 */
+  .section-intro__lower-col--icon-container-2 {
+    background-color: #163ce7;
+  }
+  
+  .icon--children {
+    transform: translate(2rem, 2rem);
+  }
+  
+  .section-intro__lower-col--text-2 {
+    color: #1b3edb;
+  }
+  
+  .section-intro__lower-col--text-2 span {
+    color: #1111e2;
+  }
+  
+  /* col-3 */
+  .section-intro__lower-col--icon-container-3 {
+    background-color: #e7165c;
+  }
+  
+  .icon--family {
+    transform: translate(2rem, 2rem);
+  }
+  
+  .section-intro__lower-col--text-3 {
+    color: #ee477f;
+  }
+  
+  .section-intro__lower-col--text-3 span {
+    color: #e7165c;
+  }
+  
+  /* col-4 */
+  .section-intro__lower-col--icon-container-4 {
+    background-color: #2ee716;
+  }
+  
+  .icon--community {
+    transform: translate(1.8rem, 1.8rem);
+  }
+  
+  .section-intro__lower-col--text-4 {
+    color: #54e441;
+  }
+  .section-intro__lower-col--text-4 span {
+    color: #2ee716;
+  }

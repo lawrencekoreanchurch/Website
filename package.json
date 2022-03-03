@@ -1,0 +1,22 @@
+{
+  "name": "kpclwebsite",
+  "version": "1.0.0",
+  "description": "Website for KPCL",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/test.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonjaelee/KPCL-Website.git"
+  },
+  "author": "kpcl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wonjaelee/KPCL-Website/issues"
+  },
+  "homepage": "https://github.com/wonjaelee/KPCL-Website#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

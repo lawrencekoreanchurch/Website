@@ -1,0 +1,169 @@
+/* **********************
+
+     SECTION - ACTIVITY
+
+*********************** */
+
+.section-activity {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 10rem;
+    position: relative;
+  }
+  
+  .section-activity::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Image/cross-pattern-1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+  }
+  
+  .section-activity__col {
+    width: 25%;
+    height: 60rem;
+    /* background-color: aquamarine; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .section-activity__col:not(:last-child) {
+    margin-right: 5rem;
+  }
+  
+  .section-activity__col-top {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+    /* background-color: #2ee716; */
+    position: relative;
+  }
+  
+  .section-activity__col-top::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    background-image: linear-gradient(
+      to bottom,
+      rgba(45, 0, 125, 0.4) 0%,
+      rgba(30, 150, 209, 0.3) 90%,
+      rgba(198, 218, 238, 0.7) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-blend-mode: overlay;
+    -webkit-mask-image: linear-gradient(
+      transparent 30%,
+      black 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    mask-image: linear-gradient(transparent 30%, black 50%, rgba(0, 0, 0, 1) 100%);
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .section-activity__col-top--1 {
+    background-image: url(../Image/image4-2_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .section-activity__col-2 .section-activity__col-top {
+    background-image: url(../Image/image4-1_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .section-activity__col-3 .section-activity__col-top {
+    background-image: url(../Image/image4-3_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  
+  /* ICON */
+  
+  .section-activity__col-top--title,
+  .section-activity__col-top--icon {
+    z-index: 10;
+  }
+  
+  .section-activity__col-top--icon {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    background-color: #1111e2;
+  }
+  
+  .section-activity__col-top--icon::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 80%;
+    border: 0.4rem solid #f9f9f9;
+    border-radius: 100%;
+    transform: translate(0.5rem, -4rem);
+  }
+  
+  /* icon */
+  .icon_bible,
+  .icon_hands,
+  .icon_walking {
+    fill: #f9f9f9;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(2.2rem, 2.2rem);
+  }
+  
+  .section-activity__col-top--title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .section-activity__col-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  }
+  .section-activity__col-bottom--description {
+    width: 65%;
+    line-height: 1.9rem;
+  }
+  
+  .section-activity__col-bottom--icon {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    background-color: red;
+  }
+  
+  .section-activity__arrow-right {
+    fill: #f9f9f9;
+    width: 4rem;
+    height: 4rem;
+    transform: translate(1.5rem, 1.5rem);
+  }

@@ -1,0 +1,114 @@
+/* *************************
+
+     SECTION - INTERVIEW
+
+************************** */
+.section-interview {
+  width: 100%;
+  padding-top: 30rem;
+  padding-bottom: 20rem;
+  position: relative;
+}
+
+.section-interview::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: url(../Image/image5-1_small.jpg),
+    linear-gradient(
+      to bottom,
+      rgba(45, 0, 125, 0.4) 0%,
+      rgba(30, 150, 209, 1) 64%,
+      rgba(198, 218, 238, 0) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-blend-mode: overlay;
+  -webkit-mask-image: linear-gradient(
+    transparent,
+    black 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(transparent, black 50%, rgba(0, 0, 0, 0.1) 100%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section-interview__contents {
+  width: 70%;
+  height: 60rem;
+  margin: 0 auto;
+  display: flex;
+  /* background-color: cadetblue; */
+}
+
+.section-interview__contents-picture {
+  width: 50%;
+  height: 100%;
+  border: 2rem solid #ffffff;
+  /* background-color: #e7165c; */
+  background-image: url(../Image/image5-3_small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -8rem;
+  position: relative;
+}
+
+.section-interview__contents-picture::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 0.8rem solid #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-interview__contents-quote {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 2rem;
+}
+
+.section-interview__contents-quote--title h2:first-child {
+  font-size: 5.5rem;
+  color: transparent;
+  -webkit-text-stroke: 0.2rem #1111e2;
+  padding-top: 5rem;
+}
+
+.section-interview__contents-quote--title h2:last-child {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin-top: -3.3rem;
+}
+
+.section-interview__contents-quote--description {
+  padding-top: 5rem;
+  padding-right: 8rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.section-interview__contents-quote--profile {
+  margin-top: 11rem;
+  text-align: right;
+  padding-right: 6rem;
+}
+
+.section-interview__contents-quote--profile h2:first-child {
+  font-size: 2rem;
+}
+
+.section-interview__contents-quote--profile h2:last-child {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
