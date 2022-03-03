@@ -1386,8 +1386,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
-  display: none; }
+  z-index: 999; }
   @media (max-width: 26.75em) {
     .main-overlay {
       overflow-y: scroll; } }
