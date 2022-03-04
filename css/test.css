@@ -1406,7 +1406,8 @@ button {
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center; } }
+        align-items: center;
+        background-color: #3d65e9; } }
     .main-overlay__contents::before {
       content: "";
       display: block;
@@ -1429,29 +1430,38 @@ button {
   filter: drop-shadow(2rem 2rem 2rem #070757); }
   @media (max-width: 26.75em) {
     .main-overlay__contents-left {
-      align-self: center; } }
+      align-self: center;
+      background-color: transparent; } }
   .main-overlay__contents-left--church-name {
     font-size: 7rem;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 0.1rem #f9f9f9;
     margin-left: -5rem; }
-    @media (max-width: 26.75em) {
-      .main-overlay__contents-left--church-name {
-        margin-left: 0; } }
     @media (max-width: 51.25em) {
       .main-overlay__contents-left--church-name {
         padding-left: 5rem; } }
+    @media (max-width: 26.75em) {
+      .main-overlay__contents-left--church-name {
+        margin-top: 5rem;
+        margin-left: 0;
+        padding-left: 0;
+        -webkit-text-stroke: 0.2rem #f9f9f9; } }
     .main-overlay__contents-left--church-name span {
       display: block; }
-      @media (max-width: 26.75em) {
-        .main-overlay__contents-left--church-name span {
-          display: inline; } }
       @media (max-width: 51.25em) {
         .main-overlay__contents-left--church-name span {
           display: inline; } }
+      @media (max-width: 26.75em) {
+        .main-overlay__contents-left--church-name span {
+          text-align: center;
+          display: block;
+          margin: 0 auto; } }
       .main-overlay__contents-left--church-name span:first-child {
         margin-bottom: -4rem; }
+        @media (max-width: 26.75em) {
+          .main-overlay__contents-left--church-name span:first-child {
+            margin-bottom: -5rem; } }
   .main-overlay__contents-left--church-address {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -1460,13 +1470,16 @@ button {
     color: #000022;
     margin-top: 2rem;
     margin-bottom: 5rem; }
-    @media (max-width: 26.75em) {
-      .main-overlay__contents-left--church-address {
-        margin-top: 1rem;
-        margin-bottom: 2rem; } }
     @media (max-width: 51.25em) {
       .main-overlay__contents-left--church-address {
         font-size: 2.5rem; } }
+    @media (max-width: 26.75em) {
+      .main-overlay__contents-left--church-address {
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 9rem;
+        margin-bottom: 3rem; } }
   .main-overlay__contents-left ul {
     font-size: 1.6rem;
     font-weight: 500;
@@ -1477,9 +1490,17 @@ button {
     @media (max-width: 51.25em) {
       .main-overlay__contents-left ul {
         font-size: 2.5rem; } }
+    @media (max-width: 26.75em) {
+      .main-overlay__contents-left ul {
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center; } }
   .main-overlay__contents-left--email {
     text-transform: uppercase;
     margin-bottom: -0.5rem; }
+    @media (max-width: 26.75em) {
+      .main-overlay__contents-left--email {
+        margin-bottom: -1.2rem; } }
     .main-overlay__contents-left--email::before {
       content: "";
       display: block;
@@ -1496,7 +1517,8 @@ button {
       @media (max-width: 26.75em) {
         .main-overlay__contents-left--email::before {
           height: 50%;
-          left: -1rem; } }
+          left: -1rem;
+          display: none; } }
   .main-overlay__contents-left--phone li:last-child {
     font-size: 2rem; }
     @media (max-width: 51.25em) {
@@ -1504,7 +1526,7 @@ button {
         font-size: 2.5rem; } }
 
 .main-overlay__contents-right {
-  background-color: #0f48b1;
+  background-color: #0f1ab1;
   margin-top: 10vh;
   padding-top: 5rem;
   padding-left: 3rem;
@@ -1553,7 +1575,8 @@ button {
         @media (max-width: 26.75em) {
           .main-overlay__contents-right--group-2::before {
             height: 50%;
-            left: -1rem; } }
+            left: -1rem;
+            display: none; } }
     .main-overlay__contents-right--group-3 {
       margin-top: 7rem; }
 
@@ -1569,9 +1592,16 @@ button {
   padding-left: 5rem;
   position: relative;
   z-index: 999; }
+  @media (max-width: 26.75em) {
+    .main-overlay__contents-right--group nav {
+      margin-top: 10rem;
+      padding-left: 0; } }
 
 .main-overlay__contents-right--group nav ul li {
   filter: drop-shadow(0.5rem 0.5rem 1rem #0f0757); }
+  @media (max-width: 26.75em) {
+    .main-overlay__contents-right--group nav ul li:not(:last-child) {
+      margin-right: 2rem; } }
 
 .main-overlay__contents-right--group nav ul li:hover {
   transform: translateY(0.1rem);
