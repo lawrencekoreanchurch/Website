@@ -2046,7 +2046,8 @@ button {
           text-align: center; } }
       @media (max-width: 26.75em) {
         .main-overlay__contents-right--group-1 {
-          font-size: 2.3rem; } }
+          font-size: 3rem;
+          text-align: left; } }
     .main-overlay__contents-right--group-2 {
       position: relative;
       z-index: 1; }
@@ -2080,12 +2081,22 @@ button {
       .main-overlay__contents-right--group-2 li:first-child {
         /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
         @media (max-width: 52.125em) {
           .main-overlay__contents-right--group-2 li:first-child {
             font-size: 5rem;
             text-align: center; } }
+        @media (max-width: 26.75em) {
+          .main-overlay__contents-right--group-2 li:first-child {
+            font-size: 3rem;
+            text-align: left; } }
       .main-overlay__contents-right--group-2 li:not(:first-child) {
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */
         /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
@@ -2093,8 +2104,15 @@ button {
           .main-overlay__contents-right--group-2 li:not(:first-child) {
             font-size: 3rem;
             text-align: center; } }
+        @media (max-width: 26.75em) {
+          .main-overlay__contents-right--group-2 li:not(:first-child) {
+            font-size: 2rem;
+            text-align: left; } }
     .main-overlay__contents-right--group-3 {
       margin-top: 7rem;
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */
       /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
@@ -2102,6 +2120,10 @@ button {
         .main-overlay__contents-right--group-3 {
           font-size: 3rem;
           text-align: center; } }
+      @media (max-width: 26.75em) {
+        .main-overlay__contents-right--group-3 {
+          font-size: 2rem;
+          text-align: left; } }
 
 .main-overlay__contents--icon-email, .main-overlay__contents--icon-phone {
   width: 2.5rem;
