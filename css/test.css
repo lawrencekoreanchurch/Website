@@ -1843,7 +1843,7 @@ button {
     } */ }
     @media (max-width: 52.125em) {
       .main-overlay__contents-left--church-name {
-        font-size: 9rem;
+        font-size: 13rem;
         -webkit-text-stroke: 0.2rem #f9f9f9;
         margin-top: 10rem;
         margin-left: 0; } }
@@ -1907,7 +1907,7 @@ button {
     } */ }
     @media (max-width: 52.125em) {
       .main-overlay__contents-left--church-address {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         line-height: 2.4rem;
         color: #ffffff;
         text-align: center;
@@ -1937,6 +1937,7 @@ button {
     } */ }
     @media (max-width: 52.125em) {
       .main-overlay__contents-left ul {
+        font-size: 2.5rem;
         justify-content: center; } }
     @media (max-width: 26.75em) {
       .main-overlay__contents-left ul {
