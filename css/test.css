@@ -1849,6 +1849,7 @@ button {
         margin-left: 0; } }
     @media (max-width: 26.75em) {
       .main-overlay__contents-left--church-name {
+        font-size: 7rem;
         margin-top: 5rem;
         margin-left: 0;
         padding-left: 0;
@@ -1984,7 +1985,13 @@ button {
     font-size: 2rem;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
+    @media (max-width: 52.125em) {
+      .main-overlay__contents-left--phone li:last-child {
+        font-size: 2.5rem; } }
 
 .main-overlay__contents-right {
   background-color: #0f1ab1;
@@ -2018,25 +2025,27 @@ button {
     color: #ffffff;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
-    } */
-    /* @if $breakpoint == tab-land-iPad-air {
-        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
-    @media (max-width: 52.125em) {
-      .main-overlay__contents-right--group {
-        text-align: center; } }
     @media (max-width: 26.75em) {
       .main-overlay__contents-right--group {
-        font-size: 1.9rem; } }
+        font-size: 1.9rem;
+        text-align: left; } }
     .main-overlay__contents-right--group ul:not(:last-child) {
       margin-bottom: 2rem; }
-    .main-overlay__contents-right--group ul li:first-child {
+    .main-overlay__contents-right--group-1 {
       font-size: 3rem;
       /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
+      @media (max-width: 52.125em) {
+        .main-overlay__contents-right--group-1 {
+          font-size: 5rem;
+          text-align: center; } }
       @media (max-width: 26.75em) {
-        .main-overlay__contents-right--group ul li:first-child {
+        .main-overlay__contents-right--group-1 {
           font-size: 2.3rem; } }
     .main-overlay__contents-right--group-2 {
       position: relative;
@@ -2068,8 +2077,31 @@ button {
             height: 50%;
             left: -1rem;
             display: none; } }
+      .main-overlay__contents-right--group-2 li:first-child {
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+        @media (max-width: 52.125em) {
+          .main-overlay__contents-right--group-2 li:first-child {
+            font-size: 5rem;
+            text-align: center; } }
+      .main-overlay__contents-right--group-2 li:not(:first-child) {
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+        @media (max-width: 52.125em) {
+          .main-overlay__contents-right--group-2 li:not(:first-child) {
+            font-size: 3rem;
+            text-align: center; } }
     .main-overlay__contents-right--group-3 {
-      margin-top: 7rem; }
+      margin-top: 7rem;
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+      @media (max-width: 52.125em) {
+        .main-overlay__contents-right--group-3 {
+          font-size: 3rem;
+          text-align: center; } }
 
 .main-overlay__contents--icon-email, .main-overlay__contents--icon-phone {
   width: 2.5rem;
