@@ -1407,7 +1407,8 @@ button {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: #3d65e9; } }
+        background-color: #3d65e9;
+        border: 1rem solid rgba(255, 255, 255, 0.2); } }
     .main-overlay__contents::before {
       content: "";
       display: block;
