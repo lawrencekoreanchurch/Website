@@ -260,6 +260,14 @@
       border-top-right-radius: 20rem;
       filter: drop-shadow(2rem 2rem 2rem #070757);
 
+      @include respond(kpcl-834) {
+        width: 90%;
+      }
+
+      @include respond(tab-land-iPad-air) {
+        margin-top: 0;
+      }
+
       @include respond(phone-large) {
         width: 90%;
         margin-top: -2rem;
@@ -267,13 +275,13 @@
         padding-right: 1.5rem;
       }
 
-      @include respond(tab-land-iPad-air) {
-        margin-top: 0;
-      }
-
       &--group {
         font-size: 2rem;
         color: #ffffff;
+
+        @include respond(kpcl-834) {
+          text-align: center;
+        }
 
         @include respond(phone-large) {
           font-size: 1.9rem;

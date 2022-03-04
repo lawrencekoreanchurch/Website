@@ -44,9 +44,9 @@ $breakpoint argument choices:
     @if $breakpoint == tab-port-medium {
         @media (max-width: 49.375em) { @content }; // 790px
     }
-    @if $breakpoint == tab-land-iPad-air {
+    /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
-    }
+    } */
     @if $breakpoint == kpcl-834 {
         @media (max-width: 52.125em) { @content }; // 834px iPad Air - Oldest
     } 
