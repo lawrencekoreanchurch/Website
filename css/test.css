@@ -1387,6 +1387,9 @@ button {
   top: 0;
   left: 0;
   z-index: 999; }
+  @media (max-width: 52.125em) {
+    .main-overlay {
+      overflow-y: scroll; } }
   @media (max-width: 26.75em) {
     .main-overlay {
       overflow-y: scroll; } }
@@ -1398,6 +1401,14 @@ button {
     display: flex;
     justify-content: space-around;
     position: relative; }
+    @media (max-width: 52.125em) {
+      .main-overlay__contents {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #3d65e9;
+        border: 3rem solid rgba(255, 255, 255, 0.2); } }
     @media (max-width: 51.25em) {
       .main-overlay__contents {
         width: 100%; } }
@@ -1429,6 +1440,11 @@ button {
   padding-bottom: 10rem;
   padding-left: 1rem;
   filter: drop-shadow(2rem 2rem 2rem #070757); }
+  @media (max-width: 52.125em) {
+    .main-overlay__contents-left {
+      align-self: center;
+      background-color: transparent;
+      padding-left: 0; } }
   @media (max-width: 26.75em) {
     .main-overlay__contents-left {
       align-self: center;
@@ -1439,6 +1455,12 @@ button {
     color: transparent;
     -webkit-text-stroke: 0.1rem #f9f9f9;
     margin-left: -5rem; }
+    @media (max-width: 52.125em) {
+      .main-overlay__contents-left--church-name {
+        font-size: 9rem;
+        -webkit-text-stroke: 0.2rem #f9f9f9;
+        margin-top: 10rem;
+        margin-left: 0; } }
     @media (max-width: 51.25em) {
       .main-overlay__contents-left--church-name {
         padding-left: 5rem; } }
@@ -1450,6 +1472,11 @@ button {
         -webkit-text-stroke: 0.2rem #f9f9f9; } }
     .main-overlay__contents-left--church-name span {
       display: block; }
+      @media (max-width: 52.125em) {
+        .main-overlay__contents-left--church-name span {
+          text-align: center;
+          display: block;
+          margin: 0 auto; } }
       @media (max-width: 51.25em) {
         .main-overlay__contents-left--church-name span {
           display: inline; } }
@@ -1460,6 +1487,9 @@ button {
           margin: 0 auto; } }
       .main-overlay__contents-left--church-name span:first-child {
         margin-bottom: -4rem; }
+        @media (max-width: 52.125em) {
+          .main-overlay__contents-left--church-name span:first-child {
+            margin-bottom: -6rem; } }
         @media (max-width: 26.75em) {
           .main-overlay__contents-left--church-name span:first-child {
             margin-bottom: -5rem; } }
@@ -1471,6 +1501,13 @@ button {
     color: #000022;
     margin-top: 2rem;
     margin-bottom: 5rem; }
+    @media (max-width: 52.125em) {
+      .main-overlay__contents-left--church-address {
+        font-size: 2.5rem;
+        line-height: 2.4rem;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 15rem; } }
     @media (max-width: 51.25em) {
       .main-overlay__contents-left--church-address {
         font-size: 2.5rem; } }
@@ -1488,6 +1525,9 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    @media (max-width: 52.125em) {
+      .main-overlay__contents-left ul {
+        justify-content: center; } }
     @media (max-width: 51.25em) {
       .main-overlay__contents-left ul {
         font-size: 2.5rem; } }
@@ -1515,6 +1555,9 @@ button {
       left: -6.5rem;
       opacity: 1;
       z-index: -1; }
+      @media (max-width: 52.125em) {
+        .main-overlay__contents-left--email::before {
+          display: none; } }
       @media (max-width: 26.75em) {
         .main-overlay__contents-left--email::before {
           height: 50%;
@@ -1573,6 +1616,9 @@ button {
         left: -9rem;
         opacity: 1;
         z-index: -1; }
+        @media (max-width: 52.125em) {
+          .main-overlay__contents-right--group-2::before {
+            display: none; } }
         @media (max-width: 26.75em) {
           .main-overlay__contents-right--group-2::before {
             height: 50%;
@@ -1593,6 +1639,10 @@ button {
   padding-left: 5rem;
   position: relative;
   z-index: 999; }
+  @media (max-width: 52.125em) {
+    .main-overlay__contents-right--group nav {
+      margin-top: 10rem;
+      padding-left: 0; } }
   @media (max-width: 26.75em) {
     .main-overlay__contents-right--group nav {
       margin-top: 10rem;

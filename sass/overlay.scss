@@ -15,6 +15,10 @@
 
   // display: none;
 
+  @include respond(kpcl-834) {
+    overflow-y: scroll;
+  }
+
   @include respond(phone-large) {
     overflow-y: scroll;
   }
@@ -28,6 +32,15 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+
+    @include respond(kpcl-834) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: rgb(61, 101, 233);
+      border: 3rem solid rgba(255,255,255,0.2);
+    }
 
     @include respond(tab-land-iPad-air) {
       width: 100%;
@@ -70,6 +83,12 @@
       padding-left: 1rem;
       filter: drop-shadow(2rem 2rem 2rem #070757);
 
+      @include respond(kpcl-834) {
+        align-self: center;
+        background-color: transparent;
+        padding-left: 0;
+      }
+
       @include respond(phone-large) {
         align-self: center;
         background-color: transparent;
@@ -84,6 +103,13 @@
           -webkit-text-stroke: 0.1rem #f9f9f9;
           margin-left: -5rem;
 
+          @include respond(kpcl-834) {
+            font-size: 9rem;
+            -webkit-text-stroke: 0.2rem #f9f9f9;
+            margin-top: 10rem;
+            margin-left: 0;
+          }
+
           @include respond(tab-land-iPad-air) {
             padding-left: 5rem;
           }
@@ -96,6 +122,12 @@
 
           & span {
             display: block;
+
+            @include respond(kpcl-834) {
+              text-align: center;
+              display: block;
+              margin: 0 auto;
+            }
 
             @include respond(tab-land-iPad-air) {
               display: inline;
@@ -110,6 +142,10 @@
             &:first-child {
               margin-bottom: -4rem;
 
+              @include respond(kpcl-834) {
+                margin-bottom: -6rem;
+              }
+              
               @include respond(phone-large) {
                 margin-bottom: -5rem;
               }
@@ -125,6 +161,14 @@
           color: rgb(0, 0, 34);
           margin-top: 2rem;
           margin-bottom: 5rem;
+
+          @include respond(kpcl-834) {
+            font-size: 2.5rem;
+            line-height: 2.4rem;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 15rem;
+          }
 
           @include respond(tab-land-iPad-air) {
             font-size: 2.5rem;
@@ -147,6 +191,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        @include respond(kpcl-834) {
+          justify-content: center;
+        }
 
         @include respond(tab-land-iPad-air) {
           font-size: 2.5rem;
@@ -181,6 +229,10 @@
           opacity: 1;
           z-index: -1;
 
+          @include respond(kpcl-834) {
+            display: none;
+          }
+          
           @include respond(phone-large) {
             height: 50%;
             left: -1rem;
@@ -257,6 +309,10 @@
             opacity: 1;
             z-index: -1;
 
+            @include respond(kpcl-834) {
+              display: none;
+            }
+
             @include respond(phone-large) {
               height: 50%;
               left: -1rem;
@@ -289,6 +345,11 @@
   padding-left: 5rem;
   position: relative;
   z-index: 999;
+
+  @include respond(kpcl-834) {
+    margin-top: 10rem;
+    padding-left: 0;
+  }
 
   @include respond(phone-large) {
     margin-top: 10rem;
