@@ -20,7 +20,7 @@ html {
   /* We want to set the font-size as 1rem. However, the default
   font size for a browser is 16px. So we calculate the % of 1rem/16px which
   is 62.5%. Now, a user can scale the font size in a browser without problems. */
-  font-size: 62.5%; /* Set the base font-size to 1rem */
+  font-size: 62.5%; /* Set the base font-size to 1rem = 10px */
 
 
   @include respond(laptop) {
@@ -95,6 +95,7 @@ main {
 
 a {
   display: block;
+  text-decoration: none;
 }
 
 ul li {
