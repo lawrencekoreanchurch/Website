@@ -1747,7 +1747,6 @@ button {
   top: 0;
   left: 0;
   z-index: 999;
-  display: none;
   /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */
