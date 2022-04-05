@@ -1544,15 +1544,18 @@ button {
 ************************** */
 .section-invitation {
   width: 100%;
+  padding: 10rem 0;
+  border-top: 1.5rem solid red;
+  border-bottom: 1.5rem solid red;
   background: url(../Image/image6-1_small.jpg), #1111e2;
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+  background-position-y: -33rem; }
   .section-invitation__contents {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 5rem;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
@@ -1562,7 +1565,6 @@ button {
     .section-invitation__contents-title {
       font-size: 7.5rem;
       font-weight: 700;
-      padding-top: 5rem;
       /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
