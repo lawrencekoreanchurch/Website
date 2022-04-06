@@ -1644,7 +1644,7 @@ button {
     z-index: -1;
     opacity: 0.1; }
   .footer__contents {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -1669,7 +1669,6 @@ button {
         padding-top: 4rem;
         padding-bottom: 5rem; } }
     .footer__contents-left {
-      padding-top: 2.5rem;
       /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
@@ -1770,6 +1769,12 @@ button {
       @media (max-width: 26.75em) {
         .footer__contents-right--sitemap {
           display: none; } }
+    .footer__contents-right--worship {
+      margin-top: 4rem;
+      padding-left: 10rem; }
+      .footer__contents-right--worship-list {
+        font-size: 2rem;
+        font-weight: 500; }
 
 .section-copyright {
   width: 100%;
