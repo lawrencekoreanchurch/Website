@@ -22,17 +22,16 @@ html {
   is 62.5%. Now, a user can scale the font size in a browser without problems. */
   font-size: 62.5%; /* Set the base font-size to 1rem = 10px */
 
-
   @include respond(laptop) {
     font-size: 56.25%; // 9/16 max-width: 1300px
   }
   @include respond(tab-land-medium) {
     font-size: 46.875%; // 7.5/16 max-width: 1024px iPad Air 1,2 generation
-  } 
+  }
   @include respond(kpcl-985) {
     font-size: 43.75%; // 7/16 max-width: 985px
-  } 
-  @include respond(tab-land-small) { 
+  }
+  @include respond(tab-land-small) {
     font-size: 40.62%; // 6.5/16  max-width: 920px
   }
   @include respond(tab-port-large) {
@@ -46,19 +45,19 @@ html {
   }
   @include respond(kpcl-749) {
     font-size: 34.37%; // 5.5/16 max-width: 749px
-  } 
+  }
   @include respond(kpcl-722) {
     font-size: 31.25%; // 5/16 max-width: 722px
-  } 
+  }
   @include respond(kpcl-658) {
     font-size: 28.12%; // 4.5/16 max-width: 658px
-  } 
+  }
   @include respond(kpcl-592) {
     font-size: 25%; // 4/16 max-width: 592px
   }
   @include respond(kpcl-526) {
     font-size: 23.125%; // 3.7/16 max-width: 526px
-  } 
+  }
   @include respond(kpcl-488) {
     font-size: 21.875%; // 3.5/16 max-width: 488px
   }
@@ -78,7 +77,7 @@ body {
   color: #2d2d2d;
   /* padding: 5rem; */
   box-sizing: border-box;
-  
+
   overflow: overlay;
   &::-webkit-scrollbar-thumb {
     background: rgba(90, 90, 90, 1);
@@ -201,6 +200,12 @@ button {
     /* background-color: thistle; */
     align-items: center;
 
+    // 2020.4.10
+    position: fixed;
+    top: 7rem;
+    right: 10rem;
+    z-index: 9999;
+
     @include respond(kpcl-834) {
       height: auto;
       flex-direction: column;
@@ -254,14 +259,14 @@ button {
   }
 
   &__btn {
-    width: 25rem;
-    height: 7rem;
-    border-radius: 7rem;
-    margin-right: 5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+    //margin-right: 5rem;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     // background-color: #0d14ee;
     background-color: #ee0d0d;
 
@@ -289,4 +294,204 @@ button {
       }
     }
   }
+}
+
+/* ***********************************
+
+              TEST HEADER 
+
+************************************ */
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 5rem 10rem 0 10rem;
+
+  &__logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 1rem;
+
+    & span {
+      color: transparent;
+      -webkit-text-stroke: 0.2rem #ffffff;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__sns {
+    padding-top: 1rem;
+    margin-right: 3rem;
+
+    & ul {
+      display: flex;
+      justify-content: center;
+
+      & li {
+        color: white;
+      }
+
+      & li:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__nav-button {
+    width: 7rem;
+    height: 7rem;
+    background-color: red;
+    border-radius: 100%;
+    display: block;
+
+    //text-align: center;
+    position: relative;
+    z-index: 999;
+
+    transition: all 0.1s ease-in-out;
+
+    &-bar {
+      margin-top: 3.2rem;
+      margin-left: 1.6rem;
+
+      &,
+      &::before,
+      &::after {
+        width: 3.5rem;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        display: inline-block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        transition: all 0.2s ease-in-out;
+      }
+
+      &::before {
+        top: -10px;
+      }
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+
+  &__background {
+    width: 7px;
+    height: 7rem;
+    background-color: red;
+    display: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    transition: all 0.1s ease-in-out;
+  }
+
+  &__menu {
+    width: 100%;
+    padding: 3rem 3rem 5rem 3rem;
+    opacity: 0;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    transition: all 0.1s ease-in-out;
+
+    & li {
+      font-size: 3rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    & li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__nav-button:hover {
+    cursor: pointer;
+  }
+
+  &__nav-button:hover &__nav-button-bar::before {
+    transform: translateY(-0.3rem);
+  }
+
+  &__nav-button:hover &__nav-button-bar::after {
+    transform: translateY(0.3rem);
+  }
+
+  &__checkbox:checked ~ &__nav-button {
+    border-radius: 0;
+  }
+
+  &__checkbox:checked ~ &__nav-button &__nav-button-bar {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__nav-button &__nav-button-bar::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__nav-button &__nav-button-bar::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__checkbox:checked ~ &__background {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  &__checkbox:checked ~ &__menu {
+    position: static;
+    opacity: 1;
+  }
+}
+
+.scroll {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  //background-color: rgba(12, 13, 95, .2);
+  background: linear-gradient(
+    to top,
+    rgba(12, 14, 95, 0) 0%,
+    rgba(12, 14, 95, 0.55) 50%,
+    rgba(66, 12, 95, 0.85) 100%
+  );
+  transition: all 0.2s;
 }

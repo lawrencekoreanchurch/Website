@@ -242,6 +242,10 @@ button {
     display: flex;
     /* background-color: thistle; */
     align-items: center;
+    position: fixed;
+    top: 7rem;
+    right: 10rem;
+    z-index: 9999;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */
@@ -300,13 +304,12 @@ button {
       .header__sns li:not(:last-child) {
         margin-right: 0; } }
   .header__btn {
-    width: 25rem;
-    height: 7rem;
-    border-radius: 7rem;
-    margin-right: 5rem;
-    display: flex;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #ee0d0d;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
@@ -338,6 +341,134 @@ button {
       @media (max-width: 26.75em) {
         .header__btn-text {
           font-size: 3.5rem; } }
+
+/* ***********************************
+
+              TEST HEADER 
+
+************************************ */
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 5rem 10rem 0 10rem; }
+  .test__logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 1rem; }
+    .test__logo span {
+      color: transparent;
+      -webkit-text-stroke: 0.2rem #ffffff; }
+  .test__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end; }
+  .test__sns {
+    padding-top: 1rem;
+    margin-right: 3rem; }
+    .test__sns ul {
+      display: flex;
+      justify-content: center; }
+      .test__sns ul li {
+        color: white; }
+      .test__sns ul li:not(:last-child) {
+        margin-right: 1rem; }
+  .test__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden; }
+  .test__checkbox {
+    display: none; }
+  .test__nav-button {
+    width: 7rem;
+    height: 7rem;
+    background-color: red;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    z-index: 999;
+    transition: all 0.1s ease-in-out; }
+    .test__nav-button-bar {
+      margin-top: 3.2rem;
+      margin-left: 1.6rem; }
+      .test__nav-button-bar, .test__nav-button-bar::before, .test__nav-button-bar::after {
+        width: 3.5rem;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .test__nav-button-bar::before, .test__nav-button-bar::after {
+        content: "";
+        transition: all 0.2s ease-in-out; }
+      .test__nav-button-bar::before {
+        top: -10px; }
+      .test__nav-button-bar::after {
+        top: 10px; }
+  .test__background {
+    width: 7px;
+    height: 7rem;
+    background-color: red;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.1s ease-in-out; }
+  .test__menu {
+    width: 100%;
+    padding: 3rem 3rem 5rem 3rem;
+    opacity: 0;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    transition: all 0.1s ease-in-out; }
+    .test__menu li {
+      font-size: 3rem;
+      font-weight: 500;
+      color: white; }
+    .test__menu li:not(:last-child) {
+      margin-bottom: 1rem; }
+  .test__nav-button:hover {
+    cursor: pointer; }
+  .test__nav-button:hover .test__nav-button-bar::before {
+    transform: translateY(-0.3rem); }
+  .test__nav-button:hover .test__nav-button-bar::after {
+    transform: translateY(0.3rem); }
+  .test__checkbox:checked ~ .test__nav-button {
+    border-radius: 0; }
+  .test__checkbox:checked ~ .test__nav-button .test__nav-button-bar {
+    background-color: transparent; }
+  .test__checkbox:checked + .test__nav-button .test__nav-button-bar::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .test__checkbox:checked + .test__nav-button .test__nav-button-bar::after {
+    top: 0;
+    transform: rotate(-135deg); }
+  .test__checkbox:checked ~ .test__background {
+    width: 100%;
+    height: 100%;
+    display: inline-block; }
+  .test__checkbox:checked ~ .test__menu {
+    position: static;
+    opacity: 1; }
+
+.scroll {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to top, rgba(12, 14, 95, 0) 0%, rgba(12, 14, 95, 0.55) 50%, rgba(66, 12, 95, 0.85) 100%);
+  transition: all 0.2s; }
 
 /* **********************
 

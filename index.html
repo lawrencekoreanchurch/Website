@@ -13,16 +13,75 @@
     <link rel="stylesheet" href="css/invitation.css" />
     <link rel="stylesheet" href="css/footer.css" /> -->
     <title>KPCL</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
     <main>
+      <header class="test">
+        <div class="test__logo"><span>korean</span> church of lawrence</div>
+        <!-- test-logo -->
+        <div class="test__right">
+          <div class="test__sns">
+            <ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCE5G5cfB8PnE6BERuwVR6Tw"
+                  target="_blank"
+                >
+                  <svg class="header__icon header__icon--youtube">
+                    <use xlink:href="Image/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/thekoreanpresbyterianchurch/"
+                  target="_blank"
+                >
+                  <svg class="header__icon header__icon--facebook">
+                    <use
+                      xlink:href="Image/sprite.svg#icon-facebook-with-circle"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/kpcl_youngadults/"
+                  target="_blank"
+                >
+                  <svg class="header__icon header__icon--instagram">
+                    <use xlink:href="Image/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- test-sns -->
+          <nav class="test__nav">
+            <input type="checkbox" class="test__checkbox" id="test-menu" />
+            <label for="test-menu" class="test__nav-button">
+              <span class="test__nav-button-bar"></span>
+            </label>
+            <div class="test__background">&nbsp;</div>
+            <ul class="test__menu">
+              <li>성경공부</li>
+              <li>예배안내</li>
+              <li>청년모임</li>
+              <li>주일학교</li>
+            </ul>
+          </nav>
+          <!-- test-nav -->
+        </div>
+      </header>
+      <!-- test-header -->
       <!-- -------------------------
              NAVIGATION BAR 
       -------------------------  -->
       <header class="header">
-        <p class="header__logo">kpcl</p>
-        <nav class="header__nav">
+        <!-- <div class="header__logo">kpcl</div>
+        <div class="header__nav">
           <ul class="header__sns">
             <li>
               <a
@@ -61,10 +120,19 @@
             <svg class="header__icon header__icon--menu">
               <use xlink:href="Image/sprite.svg#icon-menu"></use>
             </svg>
-            <p class="header__btn-text">menu</p>
           </button>
-        </nav>
+        </div> -->
       </header>
+
+      <!-- Nav Checkbox Heck 
+      
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+          <label for="navi-toggle" class="navigation__button">MENU</label>
+          
+        </div>
+      
+      -->
 
       <!-- -------------------------
              SECTION: INTRO
