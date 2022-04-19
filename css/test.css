@@ -436,8 +436,11 @@ button {
     transition: all 0.1s ease-in-out; }
     .test__menu li {
       font-size: 3rem;
-      font-weight: 500;
-      color: white; }
+      font-weight: 500; }
+      .test__menu li a {
+        color: #ffffff; }
+        .test__menu li a:hover {
+          border-bottom: 0.3rem solid #ffffff; }
     .test__menu li:not(:last-child) {
       margin-bottom: 1rem; }
   .test__nav-button:hover {
