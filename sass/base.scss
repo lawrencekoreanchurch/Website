@@ -248,6 +248,11 @@ button {
       width: 7rem;
       height: 7rem;
     }
+
+    @include respond(phone-large) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   &__sns li:not(:last-child) {
@@ -311,12 +316,23 @@ button {
   z-index: 9999;
   padding: 5rem 10rem 0 10rem;
 
+  @include respond(phone-large) {
+    flex-direction: column;
+    padding: 3rem 1rem 0 1rem;
+  }
+
   &__logo {
     font-size: 2.8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
     padding-top: 1rem;
+
+    @include respond(phone-large) {
+      font-size: 2.4rem;
+      text-align: center;
+      padding-top: 0;
+    }
 
     & span {
       color: transparent;
@@ -328,6 +344,11 @@ button {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include respond(phone-large) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__sns {
