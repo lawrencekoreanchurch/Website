@@ -397,7 +397,8 @@ button {
     @media (max-width: 26.75em) {
       .test__right {
         width: 100%;
-        flex-direction: column; } }
+        justify-content: center;
+        margin-top: 2rem; } }
   .test__sns {
     padding-top: 1rem;
     margin-right: 3rem; }
@@ -462,16 +463,35 @@ button {
     position: absolute;
     top: -1rem;
     right: 0;
-    transition: all 0.1s ease-in-out; }
+    transition: all 0.1s ease-in-out;
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+    @media (max-width: 26.75em) {
+      .test__menu {
+        padding: 3rem 1.5rem 5rem 1.5rem; } }
     .test__menu li {
       font-size: 3rem;
-      font-weight: 500; }
+      font-weight: 500;
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+      @media (max-width: 26.75em) {
+        .test__menu li {
+          font-size: 2.5rem;
+          border-bottom: 0.1rem solid rgba(255, 255, 255, 0.835); } }
       .test__menu li a {
         color: #ffffff; }
         .test__menu li a:hover {
           border-bottom: 0.3rem solid #ffffff; }
     .test__menu li:not(:last-child) {
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+      @media (max-width: 26.75em) {
+        .test__menu li:not(:last-child) {
+          margin-bottom: 1.5rem; } }
   .test__nav-button:hover {
     cursor: pointer; }
   .test__nav-button:hover .test__nav-button-bar::before {
@@ -998,7 +1018,7 @@ button {
   @media (max-width: 26.75em) {
     .section-activity {
       padding-top: 10rem;
-      padding-bottom: 10rem;
+      padding-bottom: 15rem;
       filter: none; } }
   .section-activity::before {
     content: "";
@@ -1027,6 +1047,7 @@ button {
         flex-direction: column; } }
     @media (max-width: 26.75em) {
       .section-activity__contents {
+        width: 88%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center; } }
@@ -1060,7 +1081,7 @@ button {
         padding-bottom: 2rem; } }
     @media (max-width: 26.75em) {
       .section-activity__col {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         padding-bottom: 7rem; } }
@@ -1097,6 +1118,9 @@ button {
           padding-left: 5rem; } }
       @media (max-width: 26.75em) {
         .section-activity__col-top {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
           padding-top: 1.5rem;
           padding-left: 0; } }
       .section-activity__col-top--1 {
@@ -1128,15 +1152,15 @@ button {
         border-radius: 100%;
         background-color: #1111fa;
         margin-bottom: 2rem;
-        /* &::after {
-          content: "";
-          display: block;
-          width: 80%;
-          height: 80%;
-          border: 0.2rem solid #f9f9f9;
-          border-radius: 100%;
-          transform: translate(0.5rem, -4rem);
-        } */ }
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+        @media (max-width: 26.75em) {
+          .section-activity__col-top--icon {
+            width: 7rem;
+            height: 7rem;
+            margin-bottom: 0;
+            margin-right: 2rem; } }
     .section-activity__col-bottom {
       display: flex;
       align-items: center;
@@ -1168,11 +1192,16 @@ button {
             padding-bottom: 0; } }
         @media (max-width: 26.75em) {
           .section-activity__col-bottom--description {
-            font-size: 2rem; } }
+            font-size: 2rem;
+            padding-left: 0;
+            padding-right: 0; } }
         .section-activity__col-bottom--description p {
           font-size: 2rem;
           line-height: 2.8rem;
           letter-spacing: -0.1rem;
+          /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */
           /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
@@ -1180,6 +1209,9 @@ button {
             .section-activity__col-bottom--description p {
               padding-left: 3rem;
               padding-right: 4rem; } }
+          @media (max-width: 26.75em) {
+            .section-activity__col-bottom--description p {
+              margin-top: 1rem; } }
       .section-activity__col-bottom--icon {
         width: 7rem;
         height: 7rem;
@@ -1212,13 +1244,21 @@ button {
   fill: #f9f9f9;
   width: 4.5rem;
   height: 4.5rem;
-  transform: translate(2.2rem, 2.2rem); }
+  transform: translate(2.2rem, 2.2rem);
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .icon_bible, .icon_hands, .icon_walking {
+      width: 3.5rem;
+      height: 3.5rem;
+      transform: translate(1.7rem, 1.7rem); } }
 
 .icon_hands {
-  transform: scale(1.2) translate(1.9rem, 1.9rem); }
+  transform: scale(1.2) translate(1.5rem, 1.5rem); }
 
 .icon_walking {
-  transform: scale(1.1) translate(2.1rem, 1.9rem); }
+  transform: scale(1.1) translate(1.5rem, 1.5rem); }
 
 .section-activity__btn {
   width: 35rem;
@@ -1232,7 +1272,13 @@ button {
   position: absolute;
   bottom: 8%;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .section-activity__btn {
+      bottom: 5%; } }
   .section-activity__btn--text {
     font-family: "Readex Pro", sans-serif;
     font-size: 3rem;

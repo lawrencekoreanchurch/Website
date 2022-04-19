@@ -347,7 +347,8 @@ button {
 
     @include respond(phone-large) {
       width: 100%;
-      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
     }
   }
 
@@ -451,6 +452,10 @@ button {
     right: 0;
     transition: all 0.1s ease-in-out;
 
+    @include respond(phone-large) {
+      padding: 3rem 1.5rem 5rem 1.5rem;
+    }
+
     &-worship-program {
       //font-size: 2.7rem !important;
     }
@@ -459,6 +464,11 @@ button {
       font-size: 3rem;
       font-weight: 500;
       //color: white;
+
+      @include respond(phone-large) {
+        font-size: 2.5rem;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.835);
+      }
 
       & a {
         color: #ffffff;
@@ -471,6 +481,10 @@ button {
 
     & li:not(:last-child) {
       margin-bottom: 1rem;
+
+      @include respond(phone-large) {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
