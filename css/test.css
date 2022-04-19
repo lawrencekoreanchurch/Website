@@ -1023,7 +1023,7 @@ button {
     } */ }
   @media (max-width: 26.75em) {
     .section-activity {
-      padding-top: 10rem;
+      padding-top: 6rem;
       padding-bottom: 15rem;
       filter: none; } }
   .section-activity::before {
@@ -1217,7 +1217,9 @@ button {
               padding-right: 4rem; } }
           @media (max-width: 26.75em) {
             .section-activity__col-bottom--description p {
-              margin-top: 1rem; } }
+              margin-top: 1rem;
+              font-size: 2.5rem;
+              line-height: 3.2rem; } }
       .section-activity__col-bottom--icon {
         width: 7rem;
         height: 7rem;
@@ -1376,6 +1378,7 @@ button {
     @media (max-width: 26.75em) {
       .section-interview__contents {
         width: 100%;
+        height: auto;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center; } }
@@ -1408,10 +1411,16 @@ button {
         object-fit: cover;
         /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+        /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
         @media (max-width: 52.125em) {
           .section-interview__contents-picture img {
             height: 50%; } }
+        @media (max-width: 26.75em) {
+          .section-interview__contents-picture img {
+            height: 100%; } }
       .section-interview__contents-picture::before {
         content: "";
         display: block;
@@ -1496,10 +1505,16 @@ button {
   padding: 0 2rem;
   margin-top: 3.5rem;
   margin-left: -0.3rem;
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */
   /* position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%); */ }
+  @media (max-width: 26.75em) {
+    .section-interview__btn {
+      width: 22rem; } }
   .section-interview__btn--text {
     font-family: "Readex Pro", sans-serif;
     font-size: 2.3rem;

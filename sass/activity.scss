@@ -13,7 +13,7 @@
   filter: drop-shadow(0 1rem 1rem #070757);
 
   @include respond(phone-large) {
-    padding-top: 10rem;
+    padding-top: 6rem;
     padding-bottom: 15rem;
     filter: none;
   }
@@ -202,6 +202,8 @@
 
           @include respond(phone-large) {
             margin-top: 1rem;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
           }
         }
       }
