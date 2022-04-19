@@ -541,4 +541,8 @@ button {
     rgba(66, 12, 95, 0.85) 100%
   );
   transition: all 0.2s;
+
+  @include respond(phone-large) {
+    padding-top: 5rem;
+  }
 }

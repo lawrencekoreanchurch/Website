@@ -160,6 +160,10 @@
         margin-top: 4rem;
         padding-left: 10rem;
 
+        @include respond(phone-large) {
+          padding-left: 0;
+        }
+
         &-list {
           font-size: 2rem;
           font-weight: 500;

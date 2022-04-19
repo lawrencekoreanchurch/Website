@@ -137,6 +137,10 @@
     position: relative;
     z-index: 888;
 
+    @include respond(phone-large) {
+      width: 95%;
+    }
+
     & .section-faq__qa-ind:not(:first-child) {
       margin-top: 2rem;
     }
@@ -151,6 +155,10 @@
     border-radius: 0 5rem 5rem 0;
     overflow: hidden;
     transition: all 0.3s;
+
+    @include respond(phone-large) {
+      margin-bottom: 2rem;
+    }
   }
 
   .question {
@@ -167,7 +175,7 @@
     }
 
     @include respond(phone-large) {
-      width: 98%;
+      width: 100%;
       padding-left: 0.5rem;
     }
   }

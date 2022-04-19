@@ -17,6 +17,10 @@
   background-blend-mode: darken;
   background-position-y: -33rem;
 
+  @include respond(phone-large) {
+    background-position-y: -2rem;
+  }
+
   &__contents {
     width: 60%;
     margin: 0 auto;
@@ -33,7 +37,8 @@
       //padding-top: 5rem;
 
       @include respond(phone-large) {
-        font-size: 3rem;
+        font-size: 5rem;
+        line-height: 6rem;
       }
 
       & li:first-child {

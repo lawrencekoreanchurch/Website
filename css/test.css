@@ -520,7 +520,13 @@ button {
   padding-top: 2rem;
   padding-bottom: 5rem;
   background: linear-gradient(to top, rgba(12, 14, 95, 0) 0%, rgba(12, 14, 95, 0.55) 50%, rgba(66, 12, 95, 0.85) 100%);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .scroll {
+      padding-top: 5rem; } }
 
 /* **********************
 
@@ -1660,7 +1666,13 @@ button {
     width: 75%;
     margin-top: 10rem;
     position: relative;
-    z-index: 888; }
+    z-index: 888;
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+    @media (max-width: 26.75em) {
+      .section-faq__qa-all {
+        width: 95%; } }
     .section-faq__qa-all .section-faq__qa-ind:not(:first-child) {
       margin-top: 2rem; }
   .section-faq__qa-ind {
@@ -1669,7 +1681,13 @@ button {
     margin-bottom: 5rem;
     border-radius: 0 5rem 5rem 0;
     overflow: hidden;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+    @media (max-width: 26.75em) {
+      .section-faq__qa-ind {
+        margin-bottom: 2rem; } }
   .section-faq .question {
     display: flex;
     justify-content: space-between;
@@ -1686,7 +1704,7 @@ button {
         width: 85%; } }
     @media (max-width: 26.75em) {
       .section-faq .question {
-        width: 98%;
+        width: 100%;
         padding-left: 0.5rem; } }
   .section-faq .section-faq__q {
     font-size: 2.7rem;
@@ -1779,7 +1797,13 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  background-position-y: -33rem; }
+  background-position-y: -33rem;
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .section-invitation {
+      background-position-y: -2rem; } }
   .section-invitation__contents {
     width: 60%;
     margin: 0 auto;
@@ -1798,7 +1822,8 @@ button {
     } */ }
       @media (max-width: 26.75em) {
         .section-invitation__contents-title {
-          font-size: 3rem; } }
+          font-size: 5rem;
+          line-height: 6rem; } }
       .section-invitation__contents-title li:first-child {
         color: #ffffff;
         margin-bottom: -4rem;
@@ -1999,7 +2024,13 @@ button {
           display: none; } }
     .footer__contents-right--worship {
       margin-top: 4rem;
-      padding-left: 10rem; }
+      padding-left: 10rem;
+      /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+      @media (max-width: 26.75em) {
+        .footer__contents-right--worship {
+          padding-left: 0; } }
       .footer__contents-right--worship-list {
         font-size: 2rem;
         font-weight: 500; }
