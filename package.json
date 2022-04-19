@@ -18,5 +18,8 @@
   "homepage": "https://github.com/wonjaelee/KPCL-Website#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
