@@ -235,8 +235,14 @@
   font-weight: 400;
   color: #f9f9f9;
   padding-left: 3rem;
+  padding-right: 10rem;
   margin-bottom: 2.5rem;
   border-bottom-right-radius: 1rem;
+
+  & ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
 }
 
 .section-faq__q-arrow {
