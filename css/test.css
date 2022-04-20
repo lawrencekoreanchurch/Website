@@ -1788,22 +1788,24 @@ button {
 
 /* Toggole answers */
 .question:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #446ff2; }
 
 .active {
   max-height: 500px;
   border-radius: 0 0 3rem 0;
   filter: drop-shadow(1rem 1rem 1rem #070757);
-  background-color: #446ff2;
+  background-color: #1946cd;
   transition: all 0.2s; }
 
 .section-faq__a {
   font-size: 2rem;
   font-weight: 400;
   color: #f9f9f9;
+  padding-top: 1.5rem;
   padding-left: 3rem;
   padding-right: 10rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   border-bottom-right-radius: 1rem; }
   .section-faq__a ul li {
     list-style-type: disc;
@@ -1813,10 +1815,16 @@ button {
   transform: rotate(90deg);
   transition: all 0.3s; }
 
-.active .question .section-faq__q-arrow {
-  background-color: #373cf1;
-  transform: rotate(270deg); }
+.active .question {
+  background-color: #446ff2; }
+  .active .question .section-faq__q-arrow {
+    background-color: #373cf1;
+    transform: rotate(270deg); }
 
+/* .active .question .section-faq__q-arrow {
+  background-color: rgb(55, 60, 241);
+  transform: rotate(270deg);
+} */
 /* *************************
 
      SECTION - INVITATION

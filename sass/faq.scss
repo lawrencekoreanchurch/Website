@@ -228,13 +228,14 @@
 /* Toggole answers */
 .question:hover {
   cursor: pointer;
+  background-color: rgb(68, 111, 242);
 }
 
 .active {
   max-height: 500px;
   border-radius: 0 0 3rem 0;
   filter: drop-shadow(1rem 1rem 1rem #070757);
-  background-color: rgb(68, 111, 242);
+  background-color: rgb(25, 70, 205);
   transition: all 0.2s;
 }
 
@@ -242,9 +243,10 @@
   font-size: 2rem;
   font-weight: 400;
   color: #f9f9f9;
+  padding-top: 1.5rem;
   padding-left: 3rem;
   padding-right: 10rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   border-bottom-right-radius: 1rem;
 
   & ul li {
@@ -258,7 +260,16 @@
   transition: all 0.3s;
 }
 
-.active .question .section-faq__q-arrow {
+.active .question {
+  background-color: rgb(68, 111, 242);
+
+  & .section-faq__q-arrow {
+    background-color: rgb(55, 60, 241);
+    transform: rotate(270deg);
+  }
+}
+
+/* .active .question .section-faq__q-arrow {
   background-color: rgb(55, 60, 241);
   transform: rotate(270deg);
-}
+} */
