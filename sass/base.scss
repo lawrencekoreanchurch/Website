@@ -472,6 +472,7 @@ button {
 
       & a {
         color: #ffffff;
+        text-align: center;
 
         &:hover {
           border-bottom: 0.3rem solid #ffffff;
@@ -545,5 +546,6 @@ button {
 
   @include respond(phone-large) {
     padding-top: 4rem;
+    padding-bottom: 3rem;
   }
 }

@@ -481,7 +481,8 @@ button {
           font-size: 2.5rem;
           border-bottom: 0.1rem solid rgba(255, 255, 255, 0.835); } }
       .test__menu li a {
-        color: #ffffff; }
+        color: #ffffff;
+        text-align: center; }
         .test__menu li a:hover {
           border-bottom: 0.3rem solid #ffffff; }
     .test__menu li:not(:last-child) {
@@ -527,7 +528,8 @@ button {
     } */ }
   @media (max-width: 26.75em) {
     .scroll {
-      padding-top: 4rem; } }
+      padding-top: 4rem;
+      padding-bottom: 3rem; } }
 
 /* **********************
 
@@ -1264,10 +1266,22 @@ button {
       transform: translate(1.7rem, 1.7rem); } }
 
 .icon_hands {
-  transform: scale(1.2) translate(1.5rem, 1.5rem); }
+  transform: scale(1.2) translate(1.9rem, 1.9rem);
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .icon_hands {
+      transform: scale(1.2) translate(1.5rem, 1.5rem); } }
 
 .icon_walking {
-  transform: scale(1.1) translate(1.5rem, 1.5rem); }
+  transform: scale(1.1) translate(2rem, 1.9rem);
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+  @media (max-width: 26.75em) {
+    .icon_walking {
+      transform: scale(1.1) translate(1.5rem, 1.5rem); } }
 
 .section-activity__btn {
   width: 35rem;
