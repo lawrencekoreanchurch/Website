@@ -362,6 +362,12 @@ button {
 
       & li {
         color: white;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: scale(0.95);
+          filter: drop-shadow(0rem 0rem 1.2rem #040432);
+        }
       }
 
       & li:not(:last-child) {

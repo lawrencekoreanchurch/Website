@@ -406,7 +406,11 @@ button {
       display: flex;
       justify-content: center; }
       .test__sns ul li {
-        color: white; }
+        color: white;
+        transition: all 0.3s; }
+        .test__sns ul li:hover {
+          transform: scale(0.95);
+          filter: drop-shadow(0rem 0rem 1.2rem #040432); }
       .test__sns ul li:not(:last-child) {
         margin-right: 1rem; }
   .test__nav {
@@ -2027,6 +2031,9 @@ button {
       /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
     } */ }
+      .footer__contents-right--sns li:hover {
+        transform: scale(0.95);
+        filter: drop-shadow(0rem 0rem 0.1rem #040432); }
       @media (max-width: 26.75em) {
         .footer__contents-right--sns {
           margin-top: 5rem; } }
