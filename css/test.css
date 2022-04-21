@@ -365,7 +365,15 @@ button {
   padding: 5rem 10rem 0 10rem;
   /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+  /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
+  @media (max-width: 52.125em) {
+    .test {
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem 0 1rem; } }
   @media (max-width: 26.75em) {
     .test {
       flex-direction: column;
@@ -378,7 +386,13 @@ button {
     padding-top: 1rem;
     /* @if $breakpoint == tab-land-iPad-air {
         @media (max-width: 51.25em) { @content }; // 820px
+    } */
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
     } */ }
+    @media (max-width: 52.125em) {
+      .test__logo {
+        font-size: 5rem; } }
     @media (max-width: 26.75em) {
       .test__logo {
         font-size: 2.4rem;
@@ -401,7 +415,14 @@ button {
         margin-top: 2rem; } }
   .test__sns {
     padding-top: 1rem;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    /* @if $breakpoint == tab-land-iPad-air {
+        @media (max-width: 51.25em) { @content }; // 820px
+    } */ }
+    @media (max-width: 52.125em) {
+      .test__sns {
+        padding-top: 0;
+        margin-top: 2rem; } }
     .test__sns ul {
       display: flex;
       justify-content: center; }
