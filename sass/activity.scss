@@ -65,10 +65,10 @@
 
     @include respond(kpcl-834) {
       width: 90%;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 6rem;
     }
 
     @include respond(phone-large) {
@@ -104,8 +104,9 @@
       /* background-color: #2ee716; */
 
       @include respond(kpcl-834) {
+        flex-direction: row;
+        justify-content: center;
         padding-top: 2rem;
-        padding-left: 5rem;
       }
 
       @include respond(phone-large) {
@@ -149,6 +150,11 @@
         background-color: #1111fa;
         // border: 0.5rem solid #0b0fe6b0;
         margin-bottom: 2rem;
+
+        @include respond(kpcl-834) {
+          margin-bottom: 0;
+          margin-right: 3rem;
+        }
 
         @include respond(phone-large) {
           width: 7rem;
@@ -196,7 +202,9 @@
           letter-spacing: -0.1rem;
 
           @include respond(kpcl-834) {
-            padding-left: 3rem;
+            font-size: 2.5rem;
+            line-height:3.5rem;
+            padding-left: 5rem;
             padding-right: 4rem;
           }
 
